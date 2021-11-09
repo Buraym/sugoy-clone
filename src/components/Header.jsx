@@ -1,41 +1,60 @@
 import '../styles/Header.css';
 import Logo from '../assets/logo-sugoy.png';
-import { FaBAiOutlineSearcheer } from 'react-icons/ai';
-import { FiTruck } from 'react-icons/fi';
-import { FaBars } from 'react-icons/fa';
-import { IoChatbubblesOutline } from 'react-icons/io';
+import { FaSearch } from 'react-icons/fa';
+//import { FaBars } from 'react-icons/fa';
+import { IoChatbubblesOutline } from 'react-icons/io5';
+import { ImTruck } from 'react-icons/im';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { FaShoppingCart } from 'react-icons/fa';
+import { BiLogIn } from 'react-icons/bi';
+import { CgProfile } from 'react-icons/cg';
+
 
 import {React, useState } from 'react';
 function Header(){
 
     const [contaCarrinho, setContaCarrinho] = useState('0,00');
+    const [isLogged, setIsLogged] = useState(true);
     
     return (
         <header className="header">
-            <div>
-                <FiTruck />
-                <label>ESTAMOS ENVIANDO NORMALMENTE PARA TODO O BRASIL</label>
+            <div className="header-aviso">
+                <ImTruck className="header-aviso-icone"/>
+                <label className="header-aviso-texto">ESTAMOS ENVIANDO NORMALMENTE PARA TODO O BRASIL</label>
             </div>
             <div className="header-aba-1">
-                <img className="logo" src={Logo} alt="logo" />
-                <button className="botao-header"><FaBars/></button>
-                <div>
-                    <FaBAiOutlineSearcheer />
-                    <input />
+                <div className="header-caixa-logo">
+                    <img className="logo" src={Logo} alt="logo" />
                 </div>
-                <div>
-                    <div>
-                        <IoChatbubblesOutline />
-                        <label>Central de</label>
-                        <label>Atendimento</label>
+                <div className="header-caixa-topicos">
+                    <div className="header-topico">
+                        <label className="header-topico-texto">Mais Vendidos</label>
+                    </div> 
+                    <div className="header-topico">
+                        <label className="header-topico-texto">Novidades</label>
+                    </div> 
+                    <div className="header-topico">
+                        <label className="header-topico-texto">Destaques</label>
+                    </div>
+                    <div className="header-topico">
+                        <label className="header-topico-texto">Marcas</label>
+                    </div>
+                </div>
+                <div className="header-caixa-perfil">
+                    <div className="header-pesquisa-caixa">
+                        <FaSearch  className="header-pesquisa-icone"/>
+                        <input className="header-pesquisa-input"/>
                     </div>
                     <div>
-                        <label>Entrar ou</label>
-                        <label>Cadastrar</label>
+                        {
+                            isLogged ? <BiLogIn className="header-login"/> : <CgProfile className="header-login"/>
+                        }
                     </div>
                     <div>
-                        <label>Meu Carrinho</label>
-                        <label>R$ {contaCarrinho}</label>
+                        <FaShoppingCart className="header-carrinho"/>
+                    </div>
+                    <div>
+                        <AiOutlineHeart className="header-favoritos"/>
                     </div>
                 </div>
             </div>

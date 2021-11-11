@@ -1,0 +1,21 @@
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.tela{
+    display: flex;
+    width:100vw;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}

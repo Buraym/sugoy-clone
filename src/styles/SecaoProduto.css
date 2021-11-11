@@ -1,0 +1,70 @@
+.secao-produto{
+    display: flex;
+    width:80vw;
+    height:400px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.secao-caixa-foto{
+    display: flex;
+    width:80vw;
+    height:400px;
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.secao-foto{
+    width:80vw;
+    height:400px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.secao-produto-titulo{
+    color: white;
+    z-index: 2;
+    font-size: 60px;
+    font-weight: 400;
+    position: absolute;
+    transition: 400ms ease-in-out;
+
+    font-family: 'Josefin Slab', serif;
+		font-weight:700;
+}
+
+.secao-produto-titulo:hover{
+    text-decoration-line: underline;
+}
+
+.secao-produto-subtitulo{
+    color: white;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 70px;
+
+    font-family: 'Josefin Slab', serif;
+		font-weight:700;
+}
+
+.secao-produto-carrosel{
+    display: flex;
+    width:80vw;
+    height:400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}

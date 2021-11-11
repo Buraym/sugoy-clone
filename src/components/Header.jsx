@@ -18,10 +18,6 @@ function Header(){
     
     return (
         <header className="header">
-            <div className="header-aviso">
-                <ImTruck className="header-aviso-icone"/>
-                <label className="header-aviso-texto">ESTAMOS ENVIANDO NORMALMENTE PARA TODO O BRASIL</label>
-            </div>
             <div className="header-aba-1">
                 <div className="header-caixa-logo">
                     <img className="logo" src={Logo} alt="logo" />

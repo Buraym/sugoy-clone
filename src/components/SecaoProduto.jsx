@@ -1,25 +1,43 @@
 import Produto from './Produto';
+import Slider from "react-slick";
+import "../styles/_slick.scss"; 
+import "../styles/_slick-theme.scss";
+import '../styles/SecaoProduto.css';
+import FlechaEsquerda from './FlechaEsquerda.jsx';
+import FlechaDireita from './FlechaDireita.jsx';
 
 function SecaoProduto(props) {
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <FlechaDireita />,
+    prevArrow: <FlechaEsquerda />,
+  };
+
   return (
     props.tipo === "secao" 
       ?
         <div className="secao-produto">
-          <div className="caixa-foto-fundo">
-            <img src={props.fotosecao} alt=""/>
-          </div>
-          <div className="secao-produto-titulo">
-            <label>{props.titulo}</label>
+          <div className="secao-caixa-foto">
+            <img className="secao-foto" src={props.fotosecao} alt=""/>
+            <label className="secao-produto-titulo">{props.titulo}</label>
+            <label className="secao-produto-subtitulo">{props.subtitulo}</label>
           </div>
         </div>
           : 
             props.tipo == "carrosel" 
               ?
-                <div className="carrosel-produto">
-                  <div className="carrosel-produto-titulo">
-                    <label>{props.titulo}</label>
-                  </div>
-                </div>
+              <div className="secao-produto-carrosel">
+                <Slider {...settings}>
+                  {props.produtos.map((produto, index) => {
+                    return <Produto key={index} imagem1={produto.imagem1} imagem2={produto.imagem2} nome={produto.nome} preco={produto.preco}/>
+                  })}
+                </Slider>
+              </div>
                   :
                     <div className="pack-produto">
                       <div className="pack-produto-titulo">

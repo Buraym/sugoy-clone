@@ -1,0 +1,34 @@
+.tela-video{
+    display: flex;
+    width:80vw;
+    height:45vw;
+    aspect-ratio: calc(16/9);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixa-videos{
+    display: flex;
+    width:80vw;
+    height:45vw;
+    aspect-ratio: calc(16/9);
+
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.video{
+    width:38.4vw;
+    height:25.6vw;
+    aspect-ratio: calc(16/9);
+}
+
+.video-titulo{
+    margin-bottom: -5vw;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}

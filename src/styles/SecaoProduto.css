@@ -55,16 +55,3 @@
     font-family: 'Josefin Slab', serif;
 		font-weight:700;
 }
-
-.secao-produto-carrosel{
-    display: flex;
-    width:80vw;
-    height:400px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    
-}

@@ -3,6 +3,8 @@
     width:80vw;
     height:45vw;
     aspect-ratio: calc(16/9);
+    padding-top: 20px;
+    padding-bottom:20px;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -28,7 +30,8 @@
 }
 
 .video-titulo{
-    margin-bottom: -5vw;
+    align-self: start;
+    margin-bottom: -8vw;
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
 }

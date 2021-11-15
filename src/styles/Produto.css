@@ -8,11 +8,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    transition: 0.3s ease-in-out;
 }
 
 .produto-card:hover{
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
+
 
 .produto-imagem-caixa{
     width: 200px;
@@ -25,25 +27,29 @@
 }
 
 .produto-imagem{
+    display:none;
     width: 200px;
     height: 260px;
     z-index: 1;
+    transition: 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .produto-imagem-fundo{
-    z-index: 2;
-    position: absolute;
+    position: relative;
     width: 200px;
     height: 260px;
-    border-radius: 10px;
     transition: 0.3s ease-in-out;
 }
 
-.produto-imagem-fundo:hover{
-    opacity: 0.0;
+.produto-imagem:hover {
+    display:none;
+}
+
+.produto-imagem-fundo:hover produto-imagem{
+    display:flex;
 }
 
 .produto-nome-caixa{
@@ -58,6 +64,7 @@
     font-size: 16px;
     color: #333;
     text-align: justify;
+    font-weight: bold;
 }
 
 .produto-preco-caixa{
@@ -71,7 +78,7 @@
 }
 
 .produto-preco{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: #007f5f;
 }

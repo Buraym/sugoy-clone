@@ -13,6 +13,9 @@ import { CgProfile } from 'react-icons/cg';
 import {React, useState } from 'react';
 function Header(){
 
+    var numeroCarrinho = JSON.parse(window.localStorage.getItem('totaldecompras'))
+    numeroCarrinho = numeroCarrinho == null ? 0 : numeroCarrinho[0];
+
     const [contaCarrinho, setContaCarrinho] = useState('0,00');
     const [isLogged, setIsLogged] = useState(true);
     

@@ -1,0 +1,30 @@
+.caixa-carrosel{
+    display:flex;
+    width: 80vw;
+    height: 600px;
+    overflow: hidden;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.titulo-carrosel{
+    align-self: start;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.lista-carrosel{
+    display:flex;
+    width: 80vw;
+    height: 500px;
+    overflow: scroll;
+    list-style: none;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}

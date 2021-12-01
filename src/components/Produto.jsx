@@ -50,14 +50,6 @@ function Produto(props) {
         }
 
 
-        if ( window.localStorage.getItem('carrinho') === null) {
-
-            window.localStorage.setItem("carrinho", JSON.stringify([[props.nome, props.preco, precoTotal, quantidade]]));
-            console.log("CARRINHO -> " + [props.nome, props.preco, precoTotal, quantidade])
-            console.log("O QUE FOI PRINTADO COMO CARRINHO -> " + window.localStorage.getItem('carrinho'))
-
-        }
-
         if ( window.localStorage.getItem('carrinho') !== null) {
             var listaString = (window.localStorage.getItem("carrinho"))
             var listaCarrinho = (JSON.parse(listaString))
@@ -66,6 +58,14 @@ function Produto(props) {
             window.localStorage.setItem("carrinho", JSON.stringify(listaCarrinho))
             console.log("CARRINHO -> " + [props.nome, props.preco, precoTotal, quantidade])
             console.log("O QUE FOI PRINTADO COMO CARRINHO -> " + window.localStorage.getItem('carrinho'))
+        }
+
+        if ( window.localStorage.getItem('carrinho') === null) {
+
+            window.localStorage.setItem("carrinho", JSON.stringify([[props.nome, props.preco, precoTotal, quantidade]]));
+            console.log("CARRINHO -> " + [props.nome, props.preco, precoTotal, quantidade])
+            console.log("O QUE FOI PRINTADO COMO CARRINHO -> " + window.localStorage.getItem('carrinho'))
+
         }
 
     }

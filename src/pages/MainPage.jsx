@@ -39,10 +39,10 @@ function MainPage() {
   ]
 
   const produtos2 = [
-    { imagem1: ImagemProduto11, imagem2: ImagemProduto12, nome: 'Camera DSLR Nikon D3500 Camera Lente18-55mm', preco: '4.500,60'},
-    { imagem1: ImagemProduto13, imagem2: ImagemProduto14, nome: 'Câmera Digital Nikon Coolpix P1000 zoom 125X', preco: '14.175,76'},    
-    { imagem1: ImagemProduto15, imagem2: ImagemProduto16, nome: 'Câmera Digital Nikon COOLPIX P900', preco: '11.667,42'},
-    { imagem1: ImagemProduto17, imagem2: ImagemProduto18, nome: 'Câmera Nikon D5600 DSLR com lente 18-140mm', preco: '5.990,90'},
+    { imagem1: ImagemProduto11, imagem2: ImagemProduto12, nome: 'Camera DSLR Nikon D3500 Camera Lente18-55mm', preco: 4500.60},
+    { imagem1: ImagemProduto13, imagem2: ImagemProduto14, nome: 'Câmera Digital Nikon Coolpix P1000 zoom 125X', preco: 14175.76},    
+    { imagem1: ImagemProduto15, imagem2: ImagemProduto16, nome: 'Câmera Digital Nikon COOLPIX P900', preco: 11667.42},
+    { imagem1: ImagemProduto17, imagem2: ImagemProduto18, nome: 'Câmera Nikon D5600 DSLR com lente 18-140mm', preco: 5990.90},
   ]
 
   return (

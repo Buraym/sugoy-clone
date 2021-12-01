@@ -1,23 +1,21 @@
 import '../styles/Header.css';
 import Logo from '../assets/logo-sugoy.png';
 import { FaSearch } from 'react-icons/fa';
-//import { FaBars } from 'react-icons/fa';
-import { IoChatbubblesOutline } from 'react-icons/io5';
-import { ImTruck } from 'react-icons/im';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { FaShoppingCart } from 'react-icons/fa';
 import { BiLogIn } from 'react-icons/bi';
 import { CgProfile } from 'react-icons/cg';
 
 
-import {React, useState } from 'react';
+import {React, useState, useEffect } from 'react';
 function Header(){
 
-    var numeroCarrinho = JSON.parse(window.localStorage.getItem('totaldecompras'))
-    numeroCarrinho = numeroCarrinho == null ? 0 : numeroCarrinho[0];
-
-    const [contaCarrinho, setContaCarrinho] = useState('0,00');
+    const [contaCarrinho, setContaCarrinho] = useState(3);
     const [isLogged, setIsLogged] = useState(true);
+
+    var numeroCarrinho = window.localStorage.getItem('carrinho')
+    numeroCarrinho = numeroCarrinho == null || JSON.parse(numeroCarrinho).length == 0 ? 0 : JSON.parse(numeroCarrinho).length;
+    
     
     return (
         <header className="header">
@@ -50,7 +48,7 @@ function Header(){
                         }
                     </div>
                     <div>
-                        <FaShoppingCart className="header-carrinho"/>
+                        <FaShoppingCart className="header-carrinho"/>{ numeroCarrinho != 0 ? <div className="header-carrinho-numero">{numeroCarrinho}</div> : null }
                     </div>
                     <div>
                         <AiOutlineHeart className="header-favoritos"/>

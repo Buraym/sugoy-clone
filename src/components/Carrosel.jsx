@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import FlechaDireita from './FlechaDireita';
 import FlechaEsquerda from './FlechaEsquerda';
 import Produto from "./Produto.jsx";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
 import '../styles/Carrosel.css'
 
 function CarroselSimples(props) {

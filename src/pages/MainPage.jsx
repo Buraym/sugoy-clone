@@ -1,5 +1,7 @@
 import '../styles/MainPage.css';
+import '../styles/theme-responsive.css';
 import Header from '../components/Header';
+import { FaSearch } from 'react-icons/fa';
 import SecaoProduto from '../components/SecaoProduto';
 import FotoSecao1 from '../assets/pexels-miguel-á-padriñán-1111314.jpg';
 import FotoSecao2 from '../assets/pexels-david-bartus-295884.jpg';
@@ -40,7 +42,7 @@ function MainPage() {
 
   const produtos2 = [
     { imagem1: ImagemProduto11, imagem2: ImagemProduto12, nome: 'Camera DSLR Nikon D3500 Camera Lente18-55mm', preco: 4500.60},
-    { imagem1: ImagemProduto13, imagem2: ImagemProduto14, nome: 'Câmera Digital Nikon Coolpix P1000 zoom 125X', preco: 14175.76},    
+    { imagem1: ImagemProduto13, imagem2: ImagemProduto14, nome: 'Câmera Digital Nikon Coolpix P1000 zoom 125X', preco: 14175.76},
     { imagem1: ImagemProduto15, imagem2: ImagemProduto16, nome: 'Câmera Digital Nikon COOLPIX P900', preco: 11667.42},
     { imagem1: ImagemProduto17, imagem2: ImagemProduto18, nome: 'Câmera Nikon D5600 DSLR com lente 18-140mm', preco: 5990.90},
   ]
@@ -48,6 +50,10 @@ function MainPage() {
   return (
     <div className="tela">
         <Header />
+        <div className="header-pesquisa-caixa-grande" >
+            <FaSearch  className="header-pesquisa-icone"/>
+            <input className="header-pesquisa-input"/>
+        </div>
         <div className="conteudo-home">
             <SecaoProduto fotosecao={FotoSecao1} tituloSecao="Novidades" subtituloSecao="Para todos os gostos"/>
             <SecaoProduto fotosecao={FotoSecao2} tituloSecao="Relogios" subtituloSecao="Pra quêm não perde tempo"/>

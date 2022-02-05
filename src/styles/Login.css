@@ -1,0 +1,217 @@
+.tela-login{
+    display:flex;
+    width:100vw;
+    height:100vh;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.caixa-logo{
+    display:flex;
+    width:50vw;
+    height:20vh;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.logo-login{
+    font-family: 'Pacifico', cursive;
+    font-size:calc(30px + 3vw);
+    color: #06d6a0;
+    text-shadow: calc(3px + 0.1vw) calc(2px + 0.1vw) #ef476f;
+}
+
+.caixa-logo-login{
+    display:flex;
+    width:80vw;
+    height:65vh;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.caixa-formulario-login{
+    display:flex;
+    width:80vw;
+    height:65vh;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.formulario-login{
+    display:flex;
+    width:76vw;
+    max-width: 700px;
+    height:60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+
+.login-username{
+    display:flex;
+    width:72vw;
+    max-width: 700px;
+    height:40px;
+    border-radius:4px;
+    color: #1b9aaa;
+    background-color: none;
+    border-color: #1b9aaa;
+    border:2px solid;
+    font-size: 15px;
+    padding-left: 10px;
+    z-index:1;
+    outline:none;
+
+    transition: 300ms ease-in-out;
+}
+
+
+
+.login-username-label{
+    display: flex;
+    position: absolute;
+    z-index:2;
+    color: #1b9aaa;
+    background-color: white;
+    margin-left:15px;
+    align-self: flex-start;
+    padding-left:5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    transition: 300ms ease-in-out;
+}
+
+.login-username:focus{
+    color: #ef476f;
+    border-color: #ef476f;
+}
+
+
+.login-username:hover .login-username-label{
+    color: #ef476f;
+}
+
+.login-senha{
+    display:flex;
+    width:72vw;
+    max-width: 700px;
+    height:40px;
+    border-radius:4px;
+    color: #1b9aaa;
+    background-color: none;
+    border-color: #1b9aaa;
+    border:2px solid;
+    font-size: 15px;
+    padding-left: 10px;
+    z-index:1;
+    outline:none;
+
+    transition: 300ms ease-in-out;
+}
+
+.login-senha-label{
+    display: flex;
+    position: absolute;
+    z-index:2;
+    color: #1b9aaa;
+    background-color: white;
+    margin-left:15px;
+    align-self: flex-start;
+    padding-left:5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    transition: 300ms ease-in-out;
+}
+
+.login-senha:focus{
+    color: #ef476f;
+    border-color: #ef476f;
+}
+
+.login-senha:hover .login-senha-label{
+    color: #ef476f;
+}
+
+.login-submit{
+    width:50vw;
+    width:70vw;
+    max-width: 700px;
+    height:50px;
+    border-radius:5px;
+    color: white;
+    background-color: #1b9aaa;
+    font-size: 20px;
+    border: none;
+    transition: 300ms ease-in-out;
+}
+
+.login-submit:hover{
+    background-color: #ef476f;
+    
+}
+
+.formulario-login-aviso{
+    display:flex;
+    width:76vw;
+    max-width: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size:calc(12px + 0.2vw);
+    font-weight: bold;
+    color: #06d6a0;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.label-redefinir-senha{
+    color: #ffc43d;
+    transition: 300ms ease-in-out;
+}
+
+.label-redefinir-senha:hover{
+    color: #ef476f;
+}
+
+.label-cadastro{
+    color: #ffc43d;
+    transition: 300ms ease-in-out;
+}
+
+.label-cadastro:hover{
+    color: #ef476f;
+}
+
+.footer-login{
+    display:flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -11;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}

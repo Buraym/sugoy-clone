@@ -19,3 +19,13 @@
     align-content: center;
     flex-direction: column;
 }
+
+.header-pesquisa-caixa-grande{
+    display: flex;
+    width:80vw;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}

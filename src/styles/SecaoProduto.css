@@ -31,7 +31,7 @@
 .secao-produto-titulo{
     color: white;
     z-index: 2;
-    font-size: 60px;
+    font-size: calc(20px + 2vw);
     font-weight: 400;
     position: absolute;
     transition: 400ms ease-in-out;

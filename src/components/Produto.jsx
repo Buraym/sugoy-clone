@@ -1,6 +1,8 @@
 import '../styles/Produto.css';
 import { useState} from "react";
 import { FaWhatsapp } from 'react-icons/fa';
+import { BsFillCartPlusFill } from 'react-icons/bs';
+
 
 function Produto(props) {
 
@@ -13,7 +15,7 @@ function Produto(props) {
         SEGUNDA IMAGEM DO PRODUTO -> props.imagem2
     */
 
-    const [quantidade, setQuantidade] = useState(1);
+    /*const [quantidade, setQuantidade] = useState(1);
     const [precoTotal, setPrecoTotal] = useState(props.preco);
 
     function TrocarPreco(troca) {
@@ -25,11 +27,11 @@ function Produto(props) {
             setQuantidade(quantidade - 1);
             setPrecoTotal(precoTotal - props.preco);
         }
-    }
+    }*/
 
     function HandleComprar() {
 
-        if( window.localStorage.getItem('totaldecompras') !== null){
+        /*if( window.localStorage.getItem('totaldecompras') !== null){
 
             var listaStringTotal = (window.localStorage.getItem("totaldecompras"))
             var listaTotal = (JSON.parse(listaStringTotal))
@@ -66,7 +68,7 @@ function Produto(props) {
             console.log("CARRINHO -> " + [props.nome, props.preco, precoTotal, quantidade])
             console.log("O QUE FOI PRINTADO COMO CARRINHO -> " + window.localStorage.getItem('carrinho'))
 
-        }
+        }*/
 
     }
 
@@ -80,10 +82,10 @@ function Produto(props) {
                 <label className="produto-nome">{props.nome}</label>
             </div>
             <div className="produto-preco-caixa">
-                <label className="produto-preco">R$ {precoTotal}</label>
+                <label className="produto-preco">R$ {props.preco}</label>
             </div>
             <div className="produto-quantidade-caixa-grande">
-                <div className="produto-quantidade-caixa">
+                {/*<div className="produto-quantidade-caixa">
                         <div className="produto-quantidade-caixa-texto">
                             <label className="produto-quantidade-texto">{quantidade}</label>
                         </div>
@@ -91,13 +93,10 @@ function Produto(props) {
                             <button className="produto-quantidade-acao-botao" onClick={() =>TrocarPreco('mais')}>+</button>
                             <button className="produto-quantidade-acao-botao" onClick={() =>TrocarPreco('menos')}>-</button>
                         </div>
-                </div>
-                <button className="produto-quantidade-adicionar" onClick={() => HandleComprar()}>Adicionar</button>
-            </div>
-            <div className="produto-compras-whatsapp">
-                <button className="produto-botao-whatsapp">
-                    <FaWhatsapp className="produto-icone-whatsapp"/>
-                    Comprar pelo Whatsapp
+                </div>*/}
+                <button className="produto-botao-comprar" onClick={() => HandleComprar()}>
+                    <label>Adicionar</label>
+                    <BsFillCartPlusFill className="produto-icone-carrinho" />
                 </button>
             </div>
         </div>

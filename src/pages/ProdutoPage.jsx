@@ -1,12 +1,18 @@
 import { useState } from 'react';
 import '../styles/ProdutoPage.css';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaWhatsapp } from 'react-icons/fa';
+import { useParams } from 'react-router';
+import Header from '../components/Header.jsx';
 
 
 function ProdutoPage(props) {
 
   const [imagemAtual, setimagemAtual] = useState(props.imagem[0]['imagem']);
   const [aberto1, setAberto1] = useState(false);
+  const [quantidade, setQuantidade] = useState(1);  
+
+
+  var id = useParams()
 
   return (
     <div className="tela">

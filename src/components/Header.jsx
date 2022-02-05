@@ -5,6 +5,7 @@ import { AiOutlineHeart } from 'react-icons/ai';
 import { FaShoppingCart } from 'react-icons/fa';
 import { BiLogIn } from 'react-icons/bi';
 import { CgProfile } from 'react-icons/cg';
+import { Avatar, Chip, Stack } from '@mui/material';
 
 
 import {React, useState, useEffect } from 'react';
@@ -44,7 +45,15 @@ function Header(){
                     </div>
                     <div>
                         {
-                            isLogged ? <BiLogIn className="header-login"/> : <CgProfile className="header-login"/>
+                            !isLogged ?
+
+                                <BiLogIn className="header-login"/>
+
+                                :
+                                    <Stack>
+                                        <Chip avatar={<Avatar alt="Remy Sharp" src="/broken-image.jpg" />} label="Avatar" variant="outlined"/>
+                                    </Stack>
+                                    // <CgProfile className="header-login"/>
                         }
                     </div>
                     <div>

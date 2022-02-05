@@ -1,0 +1,221 @@
+.tela-cadastro{
+    display:flex;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro-caixa-titulo{
+    display:flex;
+    width:100vw;
+    height:30vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro-tiulo{
+    font-size:calc(25px + 1.3vw);
+    font-family: 'Pacifico', cursive;
+	font-weight:700;
+    color:#5390d9;
+    text-shadow: calc(3px + 0.1vw) calc(2px + 0.1vw) #72efdd;
+}
+
+.cadastro-form{
+    display:flex;
+    width:80vw;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.form-caixa{
+    display:flex;
+    width:76vw;
+    max-width: 700px;
+    height:60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.cadastro-input-1{
+    display:flex;
+    width:72vw;
+    max-width: 700px;
+    height:40px;
+    border-radius:4px;
+    color: #1b9aaa;
+    background-color: none;
+    border-color: #1b9aaa;
+    border:2px solid;
+    font-size: 13px;
+    padding-left: 10px;
+    z-index:1;
+    outline:none;
+
+    transition: 300ms ease-in-out;
+}
+
+.cadastro-label-1{
+    display: flex;
+    position: absolute;
+    z-index:2;
+    color: #1b9aaa;
+    background-color: white;
+    margin-left:15px;
+    align-self: flex-start;
+    padding-left:5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight:bold;
+    transition: 300ms ease-in-out;
+}
+
+.cadastro-input-2{
+    display:flex;
+    width:72vw;
+    max-width: 700px;
+    height:40px;
+    border-radius:4px;
+    color: #1b9aaa;
+    background-color: none;
+    border-color: #1b9aaa;
+    border:2px solid;
+    font-size: 13px;
+    padding-left: 10px;
+    z-index:1;
+    outline:none;
+
+    transition: 300ms ease-in-out;
+}
+
+.cadastro-label-2{
+    display: flex;
+    position: absolute;
+    z-index:2;
+    color: #1b9aaa;
+    background-color: white;
+    margin-left:15px;
+    align-self: flex-start;
+    padding-left:5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight:bold;
+    transition: 300ms ease-in-out;
+}
+
+.cadastro-input-3{
+    display:flex;
+    width:72vw;
+    max-width: 700px;
+    height:40px;
+    border-radius:4px;
+    color: #1b9aaa;
+    background-color: none;
+    border-color: #1b9aaa;
+    border:2px solid;
+    font-size: 13px;
+    padding-left: 10px;
+    z-index:1;
+    outline:none;
+
+    transition: 300ms ease-in-out;
+}
+
+.cadastro-label-3{
+    display: flex;
+    position: absolute;
+    z-index:2;
+    color: #1b9aaa;
+    background-color: white;
+    margin-left:15px;
+    align-self: flex-start;
+    padding-left:5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight:bold;
+    transition: 300ms ease-in-out;
+}
+
+.cadastro-input-4{
+    display:flex;
+    width:72vw;
+    max-width: 700px;
+    height:40px;
+    border-radius:4px;
+    color: #1b9aaa;
+    background-color: none;
+    border-color: #1b9aaa;
+    border:2px solid;
+    font-size: 13px;
+    padding-left: 10px;
+    z-index:1;
+    outline:none;
+
+    transition: 300ms ease-in-out;
+}
+
+.cadastro-label-4{
+    display: flex;
+    position: absolute;
+    z-index:2;
+    color: #1b9aaa;
+    background-color: white;
+    margin-left:15px;
+    align-self: flex-start;
+    padding-left:5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight:bold;
+    transition: 300ms ease-in-out;
+}
+
+.form-caixa-submit{
+    display:flex;
+    width:76vw;
+    max-width: 700px;
+    height:60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.cadastro-submit{
+    display:flex;
+    width:400px;
+    min-width: 200px;
+    max-width: 400px;
+    height:40px;
+    color: white;
+    background-color: #1b9aaa;
+    border-radius: 30px;
+    border:3px solid#1b9aaa;
+    outline:none;
+    font-size: 15px;
+    font-weight:bold;
+    margin-top:20px;
+    transition: 200ms ease-in-out;
+    justify-content: center;
+}
+
+.cadastro-submit:hover{
+    width:calc(60vw + 10px);
+    height:50px;
+}

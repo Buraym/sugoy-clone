@@ -1,0 +1,26 @@
+@media only screen and (min-width: 991px) {
+    .header-pesquisa-caixa{
+        display:flex !important;
+    }
+    .header-pesquisa-caixa-grande{
+        display:none !important;
+    }
+}  
+
+@media only screen and (min-width: 280px) and (max-width: 990px) {
+    .header-aba-1{
+        justify-content: space-around !important;
+    }
+    .header-caixa-topicos{
+        display:none !important;
+    }
+    .header-caixa-perfil{
+        margin-left:-50px !important;
+    }
+    .header-pesquisa-caixa{
+        display:none !important;
+    }
+    .header-pesquisa-caixa-grande{
+        display:flex !important;
+    }
+}     

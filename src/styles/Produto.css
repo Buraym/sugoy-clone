@@ -15,6 +15,14 @@
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 
+.produto-card:hover .produto-imagem{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.produto-card:hover .produto-imagem-fundo{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
 
 .produto-imagem-caixa{
     width: 200px;
@@ -42,14 +50,6 @@
     width: 200px;
     height: 260px;
     transition: 0.3s ease-in-out;
-}
-
-.produto-imagem:hover {
-    display:none;
-}
-
-.produto-imagem-fundo:hover produto-imagem{
-    display:flex;
 }
 
 .produto-nome-caixa{
@@ -155,7 +155,8 @@
     align-content: center;
 }
 
-.produto-quantidade-adicionar{
+.produto-botao-comprar{
+    display: flex;
     width: 100%;
     height: 50px;
     display: flex;
@@ -168,6 +169,8 @@
     background-color: #007f5f;
     border: none;
     border-radius: 5px;
+
+    justify-content: space-evenly;
 }
 
 .produto-compras-whatsapp{
@@ -184,6 +187,7 @@
 
 
 .produto-botao-whatsapp{
+    display:flex;
     width: 100%;
     height: 30px;
     display: flex;
@@ -195,17 +199,17 @@
     background-color: white;
     border-color: #007f5f;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 
 .produto-icone-whatsapp{
     width: 15px;
     height: 15px;
-    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    font-weight: bold;
     color: #007f5f;
 }
